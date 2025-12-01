@@ -1,0 +1,205 @@
+/* 
+ DICStudio - Theme stylesheet
+
+ Part of DICStudio, a Python-based 2D digital image correlation (DIC) toolbox.
+ Copyright (c) 2025, Seyed Ali Mirjafari
+
+ Distributed under the BSD 3-Clause License.
+ See the LICENSE file in the repository root for details.
+*/
+
+/*
+ * Obsidian Dark – PRO (Compact)
+ * Crisp borders, high-contrast focus, compact layout, separated buttons.
+ * Inspired by Qt official docs and GTRONICK/QSS themes.
+ */
+QWidget {
+  font-family: "Segoe UI", "IRANSans", "Vazirmatn", "Helvetica Neue", Arial, sans-serif;
+  font-size: 9pt;
+  color: #e6e8eb;
+  background: #202225;
+}
+QMainWindow, QDialog { background: #202225; }
+QFrame, QGroupBox {
+  background: #2a2d31;
+  border: 1px solid #3e444c;
+  border-radius: 8px;
+}
+QGroupBox { margin-top: 12px; }
+QGroupBox::title {
+  subcontrol-origin: margin;
+  subcontrol-position: top left;
+  left: 10px;
+  padding: 0 6px;
+  color: #e6e8eb;
+  background: transparent;
+}
+QLabel { background: transparent; padding: 1px 2px; color: #e6e8eb; }
+QLabel:disabled { color: #7f8791; }
+QToolTip { color: #15171a; background: #fff3bd; border: 1px solid #d4ca7a; border-radius: 6px; padding: 4px 6px; }
+QLineEdit, QPlainTextEdit, QTextEdit,
+QSpinBox, QDoubleSpinBox, QDateEdit, QTimeEdit, QDateTimeEdit {
+  background: #1d1f23;
+  color: #e6e8eb;
+  border: 1px solid #3a4047;
+  border-radius: 8px;
+  padding: 4px 8px;
+  min-height: 24px;
+  selection-background-color: #3c8dff;
+  selection-color: #0e1114;
+}
+QLineEdit:focus, QPlainTextEdit:focus, QTextEdit:focus,
+QSpinBox:focus, QDoubleSpinBox:focus, QDateEdit:focus, QTimeEdit:focus, QDateTimeEdit:focus {
+  border: 1px solid #3c8dff;
+  outline: none;
+}
+QLineEdit:disabled, QPlainTextEdit:disabled, QTextEdit:disabled,
+QSpinBox:disabled, QDoubleSpinBox:disabled, QDateEdit:disabled, QTimeEdit:disabled, QDateTimeEdit:disabled {
+  background: #23262a; color: #7f8791; border-color: #31363c;
+}
+QComboBox {
+  background: #1d1f23;
+  color: #e6e8eb;
+  border: 1px solid #3a4047;
+  border-radius: 8px;
+  padding: 4px 8px;
+  padding-right: 26px;
+  min-height: 24px;
+}
+QComboBox:focus { border: 1px solid #3c8dff; }
+QComboBox::drop-down { subcontrol-origin: padding; subcontrol-position: top right; width: 22px; border: none; }
+QComboBox QAbstractItemView {
+  background: #23262a; border: 1px solid #3a4047; outline: none;
+  selection-background-color: #3c8dff; selection-color: #0e1114;
+}
+QComboBox QAbstractItemView::item { padding: 3px 8px; }
+QCheckBox, QRadioButton { spacing: 6px; color: #e6e8eb; background: transparent; padding: 1px 0; }
+QCheckBox::indicator, QRadioButton::indicator {
+  width: 14px; height: 14px; border: 1px solid #48505a; background: #23262a; border-radius: 3px;
+}
+QRadioButton::indicator { border-radius: 7px; }
+QCheckBox::indicator:checked, QRadioButton::indicator:checked { background: #3c8dff; border-color: #3c8dff; }
+QCheckBox::indicator:disabled, QRadioButton::indicator:disabled { background: #23262a; border-color: #31363c; }
+QPushButton, QToolButton {
+  color: #e6e8eb;
+  background: #2e3237;
+  border: 1px solid #3e444c;
+  border-radius: 8px;
+  padding: 4px 10px;
+  min-height: 24px;
+  margin: 2px 4px;
+}
+QPushButton:hover, QToolButton:hover { background: #353a40; }
+QPushButton:pressed, QToolButton:pressed { background: #282c31; }
+QPushButton:disabled, QToolButton:disabled { color: #7f8791; background: #262a2f; border-color: #343a41; }
+QPushButton:default { background: #3c8dff; color: #0e1114; border: 1px solid #3c8dff; }
+QPushButton:default:hover { background: #4b98ff; }
+QPushButton:default:pressed { background: #2f80f4; }
+QToolButton { qproperty-iconSize: 16px; padding: 2px 6px; min-height: 22px; }
+QMenuBar { background: #2a2d31; border-bottom: 1px solid #343a41; }
+QMenuBar::item { padding: 4px 8px; background: transparent; color: #e6e8eb; }
+QMenuBar::item:selected { background: #2f3540; }
+QMenu { background: #23262a; border: 1px solid #3a4047; }
+QMenu::item { padding: 4px 12px; color: #e6e8eb; }
+QMenu::item:selected { background: #3c8dff; color: #0e1114; }
+QMenu::separator { height: 1px; background: #343a41; margin: 4px 8px; }
+QToolBar { background: #2a2d31; border: none; border-bottom: 1px solid #343a41; }
+QStatusBar { background: #24282d; border-top: 1px solid #353b43; }
+QTabWidget::pane { border: 1px solid #3a4047; border-radius: 8px; background: #23262a; }
+QTabBar::tab {
+  background: #2e3237; color: #e6e8eb; border: 1px solid #3a4047;
+  padding: 4px 10px; margin-right: 2px; border-top-left-radius: 8px; border-top-right-radius: 8px;
+}
+QTabBar::tab:selected { background: #23262a; border-bottom-color: #23262a; }
+QTabBar::tab:hover { background: #343940; }
+QTreeView, QListView, QTableView {
+  background: #23262a; alternate-background-color: #1f2327;
+  border: 1px solid #3a4047; border-radius: 8px;
+  selection-background-color: #3c8dff; selection-color: #0e1114;
+}
+QTreeView::item, QListView::item, QTableView::item { padding: 3px 8px; }
+QHeaderView::section {
+  background: #2a2e33; color: #e6e8eb;
+  padding: 4px 8px; min-height: 22px;
+  border: 1px solid #3a4047;
+}
+QTableCornerButton::section { background: #2a2e33; border: 1px solid #3a4047; }
+QScrollBar:vertical { width: 10px; background: transparent; margin: 0; }
+QScrollBar:horizontal { height: 10px; background: transparent; margin: 0; }
+QScrollBar::handle:vertical { background: #505661; min-height: 18px; border-radius: 6px; }
+QScrollBar::handle:horizontal { background: #505661; min-width: 18px; border-radius: 6px; }
+QScrollBar::handle:hover { background: #5a616e; }
+QScrollBar::add-line, QScrollBar::sub-line { width: 0; height: 0; }
+QScrollBar::add-page, QScrollBar::sub-page { background: transparent; }
+QProgressBar {
+  border: 1px solid #3a4047; border-radius: 8px; text-align: center; color: #e6e8eb; background: #1d1f23;
+  min-height: 14px;
+}
+QProgressBar::chunk { background: #3c8dff; border-radius: 8px; }
+QSlider::groove:horizontal { height: 5px; background: #32363c; border-radius: 3px; }
+QSlider::handle:horizontal { width: 12px; background: #3c8dff; border: 1px solid #3c8dff; margin: -4px 0; border-radius: 6px; }
+QSlider::groove:vertical { width: 5px; background: #32363c; border-radius: 3px; }
+QSlider::handle:vertical { height: 12px; background: #3c8dff; border: 1px solid #3c8dff; margin: 0 -4px; border-radius: 6px; }
+
+/* --- FIX: QGroupBox title overlap (Dark) ---
+   Append this block at the END of your QSS to override earlier rules. */
+QGroupBox {
+    margin-top: 1.3em;
+    padding-top: 14px;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 10px;
+    padding: 0 6px;
+    background-color: #202225;  /* same as window bg */
+}
+QGroupBox::indicator { width: 14px; height: 14px; }
+
+/*
+ * Workflow Stack – DARK (Scoped)
+ * Keeps buttons the same height under resizing; shows borders; keeps separation.
+ * Scope by setting groupBox/objectName = "workflowPanel"
+ */
+
+/* Group container (with space for title) */
+#workflowPanel {
+    background: #2a2d31;
+    border: 1px solid #3e444c;
+    border-radius: 8px;
+    margin-top: 1.3em;
+    padding: 10px 8px 8px 8px;
+}
+#workflowPanel::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 10px;
+    padding: 0 6px;
+    color: #e6e8eb;
+    background: #202225;
+}
+
+/* Buttons inside the panel */
+#workflowPanel QPushButton {
+    min-height: 26px;
+    max-height: 26px;
+    padding: 3px 10px;
+    margin: 3px 4px;
+    border-radius: 8px;
+    border: 1px solid #3e444c;
+    background: #2e3237;
+    color: #e6e8eb;
+}
+#workflowPanel QPushButton:hover   { background: #353a40; }
+#workflowPanel QPushButton:pressed { background: #282c31; }
+#workflowPanel QPushButton:default { background: #3c8dff; color: #0e1114; border-color: #3c8dff; }
+#workflowPanel QPushButton:disabled {
+    background: #262a2f;
+    color: #7f8791;
+    border-color: #343a41;
+}
+#workflowPanel QToolButton {
+    min-height: 24px; max-height: 24px; padding: 2px 8px; margin: 2px 4px;
+    border-radius: 8px; border: 1px solid #3e444c; background: #2e3237;
+    qproperty-iconSize: 16px;
+}

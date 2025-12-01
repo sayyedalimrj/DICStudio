@@ -1,0 +1,27 @@
+
+# Python cache / build artefacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build artefacts
+build/
+dist/
+*.egg-info/
+*.spec
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# PyInstaller output (if you build exe locally)
+output/
+*.exe
+
+
